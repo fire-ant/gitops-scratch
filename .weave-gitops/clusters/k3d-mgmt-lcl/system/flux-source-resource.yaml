@@ -1,0 +1,12 @@
+---
+apiVersion: source.toolkit.fluxcd.io/v1beta1
+kind: GitRepository
+metadata:
+  name: wego-auto-github-gitops-scratch
+  namespace: wego-system
+spec:
+  interval: 30s
+  ref:
+    branch: master
+  url: https://github.com/fire-ant/gitops-scratch.git
+
